@@ -29,14 +29,14 @@ contract SimpleBank {
      */
 
     // Add an argument for this event, an accountAddress
-    event LogEnrolled(address _address);
+    event LogEnrolled(address accountAddress);
 
     // Add 2 arguments for this event, an accountAddress and an amount
-    event LogDepositMade(address _address, uint _value);
+    event LogDepositMade(address accountAddress, uint amount);
 
     // Create an event called LogWithdrawal
     // Hint: it should take 3 arguments: an accountAddress, withdrawAmount and a newBalance
-    event LogWithdrawal(address _address, uint _withdrawAmount, uint _newBalance);
+    event LogWithdrawal(address accountAddress, uint withdrawAmount, uint newBalance);
 
     /* Functions
      */
